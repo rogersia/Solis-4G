@@ -1,10 +1,21 @@
 # Solis-4G RS485 - Openenergymonitor EmonHub
 Python project to Read Solis-4G inverter over RS485 and report to EmonHub 
 
-1. Add python file to ~/data/solis-4g.py
+1. Save python script to ~/data/solis-4g.py
 2. Configure Emonhub with the additional settings below
 3. Call python file using Node-Red on emonpi / emon hub
 
+
+## MinimalModbus installation
+Set emonpi into read-write mode
+Install minimalmodbus
+Set emonpi to read-only mode
+
+```
+rpi-rw
+sudo pip install -U minimalmodbus
+rpi-ro
+```
 
 ## EmonHub Configuration
 Note the information must be in the correct section for emonhub to work.
